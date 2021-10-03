@@ -70,9 +70,6 @@ const start = () => {
     // Функция обратного вызова для игры "Угадай число"
     // Отслеживание кликов на кнопки. Нажимаем на кнопку и приходит ответ
     bot.on('callback_query', async msg => {
-        console.log(msg);
-        console.log(chats['490896576']);
-
         const data = msg.data; // получаем значение кнопки по которой нажали в телеграм боте
         const chatId = msg.message.chat.id; // получаем id чата. Либо так: const chatId = msg.chat.id;
 
